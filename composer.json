@@ -1,6 +1,6 @@
 {
   "name": "wpxup/sdk",
-  "description": "WPXUP Test Plugin",
+  "description": "WPXUp SDK",
   "type": "project",
   "require": {},
   "license": "MIT",
