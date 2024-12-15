@@ -1,0 +1,12 @@
+{
+  "name": "wpxup/sdk",
+  "description": "WPXUP Test Plugin",
+  "type": "project",
+  "require": {},
+  "license": "MIT",
+  "autoload": {
+      "psr-4": {
+          "WPXUp\\Sdk\\": "src/"
+      }
+  }
+}
