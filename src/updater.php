@@ -11,7 +11,13 @@ class Updater {
         add_filter( 'site_transient_update_plugins', [$this, 'update'] );
     }
 
-    public function init() {}
+    public function init() {
+        if (defined('WPX_CORE_DEV') && WPX_CORE_DEV) {
+            define('WPX_API_HOST', 'http://host.docker.internal:4200');
+        } else {
+            define('WPX_API_HOST', 'https://api.wpxup.com');
+        }
+    }
 
     public function info() {
         
